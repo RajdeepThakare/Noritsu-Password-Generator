@@ -10,7 +10,7 @@ class FirstScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              "Today's Password : ${divStuff()}",
+              "Todays Password : ${divStuff()}",
               style: TextStyle(color: Colors.white, fontSize: 40.0),
             ),
           ],
