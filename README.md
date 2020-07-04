@@ -1,6 +1,6 @@
-# noritsu_password_generator
+# Noritsu Password Generator
 
-## Application to generate daily passwords for Noritse QSS MiniLab machines hasslefree.
+### Only application to generate daily passwords for Noritse QSS MiniLab machines hasslefree.
 
 
 
