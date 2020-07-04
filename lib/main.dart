@@ -12,9 +12,15 @@ class MyApp extends StatelessWidget {
       title: "Noritsu Password Generator",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Noritsu Password Generator"),
+          title: Text(
+            "Noritsu Password Generator",
+            style: TextStyle(color: Colors.white),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          elevation: 5.0,
         ),
-        body: FirstScreen(),
+        body: Home(),
       ),
     );
   }

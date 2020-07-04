@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class FirstScreen extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.blueAccent,
+      color: Colors.black87,
       child: Center(
-        child: Column(
-          children: <Widget>[
-            Text(
-              "Todays Password : ${divStuff()}",
-              style: TextStyle(color: Colors.white, fontSize: 40.0),
-            ),
-          ],
+        child: Text(
+          "${divStuff()}",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 120.0,
+            fontFamily: 'PIXymbols',
+          ),
         ),
       ),
     );
