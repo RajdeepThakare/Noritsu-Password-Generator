@@ -2,6 +2,6 @@
 
 ### Only application to generate daily passwords for Noritsu QSS MiniLab machines hasslefree.
 
-![](images/screenshot_1.png)
+<img src="images/screenshot_1.png" width="400">
 
 Font - PIXymbols Digit Clocks W90 Bd onlinewebfonts.com
