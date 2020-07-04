@@ -12,7 +12,8 @@ class Home extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 120.0,
-            fontFamily: 'PIXymbols',
+            fontFamily:
+                'PIXymbols', //PIXymbols Digit Clocks W90 Bd from onlinewebfonts.com
           ),
         ),
       ),
