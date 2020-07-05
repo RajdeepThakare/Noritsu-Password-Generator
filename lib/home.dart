@@ -1,22 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class FirstScreen extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.blueAccent,
-      child: Center(
-        child: Column(
-          children: <Widget>[
-            Text(
-              "Todays Password : ${divStuff()}",
-              style: TextStyle(color: Colors.white, fontSize: 40.0),
+      color: Colors.black87,
+      child: Stack(
+        children: <Widget>[
+          Center(
+            child: Container(
+              child: Text(
+                "${divStuff()}",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 120.0,
+                  fontFamily: 'PIXymbols',
+                ),
+              ),
             ),
-          ],
-        ),
+          ),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              child: RaisedButton(
+                onPressed: _launchURL,
+                child: new Text('Learn More'),
+              ),
+              margin: EdgeInsets.all(10.0),
+            ),
+          ),
+        ],
       ),
     );
+  }
+}
+
+_launchURL() async {
+  const url = 'https://github.com/RajdeepThakare/Noritsu-Password-Generator';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
 

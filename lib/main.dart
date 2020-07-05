@@ -10,11 +10,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Noritsu Password Generator",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Noritsu Password Generator"),
+          title: Text(
+            "Noritsu Password Generator",
+            style: TextStyle(color: Colors.white),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          elevation: 5.0,
         ),
-        body: FirstScreen(),
+        body: Home(),
       ),
     );
   }
