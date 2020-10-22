@@ -22,13 +22,19 @@ class Home extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment.bottomLeft,
+            alignment: Alignment.bottomCenter,
             child: Container(
               child: RaisedButton(
                 onPressed: _launchURL,
-                child: new Text('Learn More'),
+                child: Text(
+                  'Project Sponsored by Rajdeep Digital Colour Lab, Wani.',
+                  style: TextStyle(color: Colors.white),
+                ),
+                color: Colors.black12,
+                elevation: 2.0,
               ),
-              margin: EdgeInsets.all(10.0),
+              margin: EdgeInsets.all(15.0),
+              width: 400.0,
             ),
           ),
         ],
@@ -38,7 +44,7 @@ class Home extends StatelessWidget {
 }
 
 _launchURL() async {
-  const url = 'https://github.com/RajdeepThakare/Noritsu-Password-Generator';
+  const url = 'https://g.page/Rajdeep-Lab?share';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
